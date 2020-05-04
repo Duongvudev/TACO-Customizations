@@ -1,6 +1,6 @@
 report 27014756 "TACO Payment Voucher BIDV"
 {
-    // version NWV-TACO
+    //NWV-TACO1.0 20200504 Duongvm add Report BIDV 
 
     RDLCLayout = './.vscode/rdlc/TACO-Payment Voucher BIDV.rdl';
     WordLayout = './.vscode/rdlc/TACO-Payment Voucher BIDV.docx';
