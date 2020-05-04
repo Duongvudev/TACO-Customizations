@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>8ecc8dec-1a99-4be6-b652-cfedd88327e4</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>1.58731in</Height>
+        <Style />
+      </Body>
+      <Width>8.59037in</Width>
+      <Page>
+        <PageHeight>11.69in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <LeftMargin>0.2in</LeftMargin>
+        <TopMargin>0.2in</TopMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="Account_No">
+          <DataField>Account_No</DataField>
+        </Field>
+        <Field Name="GL_Account_No">
+          <DataField>GL_Account_No</DataField>
+        </Field>
+        <Field Name="Document_No">
+          <DataField>Document_No</DataField>
+        </Field>
+        <Field Name="External_Document_No">
+          <DataField>External_Document_No</DataField>
+        </Field>
+        <Field Name="Currenry_Code">
+          <DataField>Currenry_Code</DataField>
+        </Field>
+        <Field Name="GL_Account_Name">
+          <DataField>GL_Account_Name</DataField>
+        </Field>
+        <Field Name="GL_Account_Vietnamese_Name">
+          <DataField>GL_Account_Vietnamese_Name</DataField>
+        </Field>
+        <Field Name="Bank_Account_No">
+          <DataField>Bank_Account_No</DataField>
+        </Field>
+        <Field Name="Bank_Account_Name">
+          <DataField>Bank_Account_Name</DataField>
+        </Field>
+        <Field Name="Bank_Account_Vietnamese_Name">
+          <DataField>Bank_Account_Vietnamese_Name</DataField>
+        </Field>
+        <Field Name="Bank_Account_Fax_No">
+          <DataField>Bank_Account_Fax_No</DataField>
+        </Field>
+        <Field Name="Bank_Account_Phone_No">
+          <DataField>Bank_Account_Phone_No</DataField>
+        </Field>
+        <Field Name="Bank_Account_Address">
+          <DataField>Bank_Account_Address</DataField>
+        </Field>
+        <Field Name="Bank_Account_Branch_No">
+          <DataField>Bank_Account_Branch_No</DataField>
+        </Field>
+        <Field Name="Bank_Account_Branch_Name">
+          <DataField>Bank_Account_Branch_Name</DataField>
+        </Field>
+        <Field Name="Source_Account_No">
+          <DataField>Source_Account_No</DataField>
+        </Field>
+        <Field Name="Source_Account_Name">
+          <DataField>Source_Account_Name</DataField>
+        </Field>
+        <Field Name="Source_Account_Vietnamese_Name">
+          <DataField>Source_Account_Vietnamese_Name</DataField>
+        </Field>
+        <Field Name="Source_Account_Fax_No">
+          <DataField>Source_Account_Fax_No</DataField>
+        </Field>
+        <Field Name="Source_Account_Phone_No">
+          <DataField>Source_Account_Phone_No</DataField>
+        </Field>
+        <Field Name="Source_Account_Address">
+          <DataField>Source_Account_Address</DataField>
+        </Field>
+        <Field Name="Source_Account_Branch_No">
+          <DataField>Source_Account_Branch_No</DataField>
+        </Field>
+        <Field Name="Source_Account_Branch_Name">
+          <DataField>Source_Account_Branch_Name</DataField>
+        </Field>
+        <Field Name="Vietnamese_Description">
+          <DataField>Vietnamese_Description</DataField>
+        </Field>
+        <Field Name="Document_Date">
+          <DataField>Document_Date</DataField>
+        </Field>
+        <Field Name="Posting_Date">
+          <DataField>Posting_Date</DataField>
+        </Field>
+        <Field Name="Credit_Amount">
+          <DataField>Credit_Amount</DataField>
+        </Field>
+        <Field Name="Debit_Amount">
+          <DataField>Debit_Amount</DataField>
+        </Field>
+        <Field Name="Credit_Amount_FCY">
+          <DataField>Credit_Amount_FCY</DataField>
+        </Field>
+        <Field Name="Debit_Amount_FCY">
+          <DataField>Debit_Amount_FCY</DataField>
+        </Field>
+        <Field Name="Currency_ExRate">
+          <DataField>Currency_ExRate</DataField>
+        </Field>
+        <Field Name="Amount_In_Word">
+          <DataField>Amount_In_Word</DataField>
+        </Field>
+        <Field Name="L_Picture">
+          <DataField>L_Picture</DataField>
+        </Field>
+        <Field Name="L_CompName">
+          <DataField>L_CompName</DataField>
+        </Field>
+        <Field Name="L_CompName1">
+          <DataField>L_CompName1</DataField>
+        </Field>
+        <Field Name="L_CompAddress">
+          <DataField>L_CompAddress</DataField>
+        </Field>
+        <Field Name="L_CompAddress1">
+          <DataField>L_CompAddress1</DataField>
+        </Field>
+        <Field Name="L_Registration">
+          <DataField>L_Registration</DataField>
+        </Field>
+        <Field Name="L_Registration1">
+          <DataField>L_Registration1</DataField>
+        </Field>
+        <Field Name="L_PhoneNo">
+          <DataField>L_PhoneNo</DataField>
+        </Field>
+        <Field Name="L_FaxNo">
+          <DataField>L_FaxNo</DataField>
+        </Field>
+        <Field Name="L_StringFormat">
+          <DataField>L_StringFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

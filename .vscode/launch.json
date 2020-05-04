@@ -1,0 +1,41 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Taco",
+            "type": "al",
+            "request": "attach",
+            "server": "http://192.168.1.57/",
+            "serverInstance": "TACO_1504_DEV",
+            "authentication": "Windows",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "enableSqlInformationDebugger": true,
+            "enableLongRunningSqlStatements": true,
+            "longRunningSqlStatementsThreshold": 500,
+            "numberOfSqlStatements": 10,
+            "breakOnNext": "WebClient"
+        },
+        
+        {
+            "type": "al",
+            "request": "launch",
+            "name": "LS Central",
+            "server": "http://192.168.1.57/",
+            "port": 7049,
+            "serverInstance": "TACO_1504_DEV",
+            "authentication": "Windows",
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": true,
+            "breakOnRecordWrite": false,
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true,
+            "schemaUpdateMode": "Synchronize"
+        }
+    ]
+    //TACO_1504_DEV
+    //TACO_BC1504_HO
+    //TACO_1504_POS
+}
